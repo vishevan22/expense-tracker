@@ -1,0 +1,38 @@
+# Ignore everything by default
+*
+
+# Include main app folder (except __pycache__ and secret files)
+!app/
+!app/*.py
+!app/templates/
+!app/static/
+!app/static/css/
+!app/static/js/
+
+# Ignore compiled Python files
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Ignore sensitive files
+.env
+app/secret.py
+
+# Ignore virtual environment
+venv/
+env/
+ENV/
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# IDE/editor files
+.vscode/
+.idea/
+
+# Include requirements file
+!requirements.txt
+
+# Include .gitignore itself
+!.gitignore
